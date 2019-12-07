@@ -32,4 +32,9 @@ export default (props) => {
   );
 
 };```
+The stack used for the application is:
+- MobX
+- React-Native
+- ReactStrap
+- CSS
 
