@@ -135,6 +135,12 @@ const styles = StyleSheet.create({
     borderRadius: 3,
     paddingHorizontal: 4,
   },
+  registerText: {
+    fontSize: 15,
+    color: "red",
+    lineHeight: 18,
+    textAlign: 'center',
+  },
   getStartedText: {
     fontSize: 17,
     color: 'rgba(96,100,109, 1)',

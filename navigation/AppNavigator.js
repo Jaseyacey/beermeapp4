@@ -1,12 +1,20 @@
 import React from 'react';
-import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import { DrawerNavigator } from 'react-navigation';
+import SplashScreen from '../screens/splash.screen';
+import LoginScreen from '../screens/Login.screen';
+const splash = {
+  screen: SplashScreen,
+  navigationOptions: {
+    header: null
+  }
+}
 
-import MainTabNavigator from './MainTabNavigator';
+const RouteConfig = {
+  initialRoute: 'Splash'
+}
+const AppNavigator = DrawerNavigator ({
+  Splash: Splash,
+  Login: Login
+}, RouteConfig)
 
-export default createAppContainer(
-  createSwitchNavigator({
-    // You could add another route here for authentication.
-    // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-    Main: MainTabNavigator,
-  })
-);
+export default AppNavigator;
