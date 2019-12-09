@@ -31,5 +31,16 @@ export default (props) => {
     <Button color="danger">Danger!</Button>
   );
 
-};```
+};
+
+The stack used for this application is:
+- MobX
+- React-Native
+- ReactStrap
+- CSS
+
+
+
+
+
 
