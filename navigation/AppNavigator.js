@@ -1,10 +1,8 @@
 import React from 'react';
-import { createDrawerNavigator } from 'react-navigation-drawer';
+import { createStackNavigator } from 'react-navigation';
 import { DrawerNavigator } from 'react-navigation';
 import SplashScreen from '../screens/splash.screen';
 import LoginScreen from '../screens/Login.screen';
-import { createDrawerNavigator } from 'react-navigation-drawer';
-
 
 const splash = {
   screen: SplashScreen,
@@ -16,9 +14,9 @@ const splash = {
 const RouteConfig = {
   initialRoute: 'Splash'
 }
-const AppNavigator = DrawerNavigator ({
+const navigate = createStackNavigator ({
   Splash: SplashScreen,
-  // Login: LoginScreen
+  Login: LoginScreen
 }, RouteConfig)
 
-export default AppNavigator;
+export default navigate;
