@@ -1,24 +1,24 @@
-// import React from 'react';
-// import { createDrawerNavigator } from 'react-navigation-drawer';
-// import SplashScreen from '../screens/splash.screen';
-// import LoginScreen from '../screens/Login.screen';
+import React from 'react';
+import { createDrawerNavigator } from 'react-navigation-drawer';
+import SplashScreen from '../screens/splash.screen';
+import LoginScreen from '../screens/Login.screen';
 
-// const splash = {
-//   screen: SplashScreen,
-//   navigationOptions: {
-//     header: null
-//   }
-// }
+const splash = {
+  screen: SplashScreen,
+  navigationOptions: {
+    header: null
+  }
+}
 
-// const RouteConfig = {
-//   initialRoute: 'Splash'
-// }
-// const navigator = DrawerNavigator ({
-//   Splash: SplashScreen,
-//   Login: LoginScreen
-// }, RouteConfig)
+const RouteConfig = {
+  initialRoute: 'Splash'
+}
+const navigator = DrawerNavigator ({
+  Splash: SplashScreen,
+  Login: LoginScreen
+}, RouteConfig)
 
-// export default AppNavigator;
+export default AppNavigator;
 
 import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
