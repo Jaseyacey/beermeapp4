@@ -1,9 +1,9 @@
 import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
-import * as Font from 'expo-font';
-// import { Ionicons } from '@expo/vector-icons';
-import Ionicons from '@expo/vector-icons/fonts/Ionicons.ttf';
-// import Icon from 'react-native-vector-icons/Ionicons';
+
+
+import Ionicons from '../beermeapp4/node_modules/@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts/Ionicons.ttf';
+
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import AppNavigator from './navigation/AppNavigator';
@@ -37,8 +37,8 @@ async function loadResourcesAsync() {
     ]),
     Font.loadAsync({
       ...Ionicons.font,
-      'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
-      'Ionicons': require('@expo/vector-icons/fonts/Ionicons.ttf'),
+      'space-mono': require('./node_modules/'),
+      'Ionicons': require('./node_modules/react-native-vector-icons/Fonts/Ionicons.ttf'),
     }),
   ]);
 }
