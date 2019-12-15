@@ -19,4 +19,4 @@ const navigate = createStackNavigator ({
   Login: LoginScreen
 }, RouteConfig)
 
-export default navigate;
+export default AppNavigator;

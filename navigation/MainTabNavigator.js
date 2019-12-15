@@ -65,7 +65,7 @@ SettingsStack.navigationOptions = {
   ),
 };
 
-SplashStack.path = '';
+SettingsStack.path = '';
 
 const SplashStack = createStackNavigator(
   {
@@ -81,7 +81,7 @@ SplashStack.navigationOptions = {
   ),
 };
 
-SettingsStack.path = '';
+SplashStack.path = '';
 
 const MaintabNavigator = createBottomTabNavigator({
   HomeStack,
@@ -101,3 +101,5 @@ export const Root = StackNavigator({
   mode: 'modal',
   headerMode: 'none',
 });
+
+export default MaintabNavigator; 
