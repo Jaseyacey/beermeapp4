@@ -1,12 +1,19 @@
 import React from 'react';
-import { createAppContainer, createSwitchNavigator } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation';
+import { DrawerNavigator } from 'react-navigation';
+import SplashScreen from '../screens/splash.screen';
+import LoginScreen from '../screens/Login.screen';
 
-import MainTabNavigator from './MainTabNavigator';
+createStackNavigator({
+  // For each screen that you can navigate to, create a new entry like this:
+  SplashScreen: {
+    // `ProfileScreen` is a React component that will be the main content of the screen.
+    screen: SplashScreen,
+    
+    navigationOptions: ({ navigation }) => ({
+      title: `${navigation.state.params.name}'s Profile'`,
+    }),
+  },
 
-export default createAppContainer(
-  createSwitchNavigator({
-    // You could add another route here for authentication.
-    // Read more at https://reactnavigation.org/docs/en/auth-flow.html
-    Main: MainTabNavigator,
-  })
-);
+  ...MyOtherRoutes,
+});

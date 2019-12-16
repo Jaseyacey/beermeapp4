@@ -1,9 +1,7 @@
 import { AppLoading } from 'expo';
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
-// import { Ionicons } from '@expo/vector-icons';
-import Ionicons from '@expo/vector-icons/fonts/Ionicons.ttf';
-// import Icon from 'react-native-vector-icons/Ionicons';
+import { Ionicons } from '@expo/vector-icons/build/vendor/react-native-vector-icons/Fonts';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import AppNavigator from './navigation/AppNavigator';
