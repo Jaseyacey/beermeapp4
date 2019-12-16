@@ -1,4 +1,5 @@
 import { AppLoading } from 'expo';
+import 'react-native-gesture-handler'
 import { Asset } from 'expo-asset';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
@@ -6,7 +7,6 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import React, { useState } from 'react';
 import { Platform, StatusBar, StyleSheet, View } from 'react-native';
 import AppNavigator from './navigation/AppNavigator';
-
 export default function App(props) {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Ionicons } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';  
 import { ExpoConfigView } from '@expo/samples';
 
 export default function SettingsScreen() {

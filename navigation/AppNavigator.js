@@ -1,22 +1,12 @@
 import React from 'react';
+import AppNavigator from 'react-native-app-navigator'
 import { createStackNavigator } from 'react-navigation';
 import { DrawerNavigator } from 'react-navigation';
-import SplashScreen from '../screens/splash.screen';
+import { ReactNavigator } from 'react-navigation-stack'
+import SettingsScreen from '../screens/SettingsScreen';
 import LoginScreen from '../screens/Login.screen';
+// import LinksScreen from '../screens.LinksScreen';
 
-const splash = {
-  screen: SplashScreen,
-  navigationOptions: {
-    header: null
-  }
-}
 
-const RouteConfig = {
-  initialRoute: 'Splash'
-}
-const navigate = createStackNavigator ({
-  Splash: SplashScreen,
-  Login: LoginScreen
-}, RouteConfig)
 
 export default AppNavigator;
