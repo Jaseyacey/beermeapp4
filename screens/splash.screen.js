@@ -2,9 +2,10 @@ import React, {Component } from 'react';
 import {Image, View } from 'react-native';
 import { inject } from 'mobx-react';
 import AppNavigator from '../navigation/AppNavigator';
-// import createStackNavigator from 'react-navigation-stack';
+import createStackNavigator from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import stores from 'react-native';
+import { SplashScreen } from 'expo';
 
 class HomeScreen extends React.Component {
   render() {
@@ -22,4 +23,4 @@ const Splashscreen = AppNavigator({
   },
 });
 
-export default Splashscreen;
+export default SplashScreen;
