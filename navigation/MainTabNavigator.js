@@ -66,7 +66,6 @@ SettingsStack.navigationOptions = {
 };
 
 SettingsStack.path = '';
-
 const SplashStack = createStackNavigator(
   {
     Splash: SplashScreen,
