@@ -17,26 +17,13 @@ This will create the app skeleton and run it. To see the app running you will ne
 
 Opening the app.js this will allow you to edit the file in your IDE. I use visual studio code and use the local terminal for my command line prompts.
 
-I like to use ReactStrap as a similar bootstrap framework for ios development.
-
-npm install --save reactstrap react react-dom
-
 This will install the framework in your node-modules. The import command in order to add different components into your file is below. Importing the component from { 'reactstrap' }; will ensure that it gets passed to the correct component.
 
 
-```import { Button } from 'reactstrap';
-
-export default (props) => {
-  return (
-    <Button color="danger">Danger!</Button>
-  );
-
-};
 
 The stack used for this application is:
 - MobX
 - React-Native
-- ReactStrap
 - CSS
 
 
