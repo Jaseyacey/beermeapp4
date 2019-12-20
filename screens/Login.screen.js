@@ -4,7 +4,6 @@ import {Container,Content
 import {View,Image,StyleSheet,Dimensions
 } from 'react-native';
 import { inject } from 'mobx-react';
-
 import Login from '../components/login.component';
 
 @inject("stores")
@@ -25,6 +24,25 @@ export default class LoginScreen extends Component {
             </Image>
           </Content>
         </View>
+        <Footer>
+          <FooterTab>
+              <Button vertical>
+                <Icon name="apps">
+                  <Text>beers</Text>
+                </Icon>
+                </Button>
+                <Button vertical>
+                <Icon name="apps">
+                  <Text>beers</Text>
+                </Icon>
+                </Button>
+                <Button vertical>
+                <Icon name="apps">
+                  <Text>beers</Text>
+                </Icon>
+                </Button>
+          </FooterTab>
+        </Footer>
       </Container>
     )
   }

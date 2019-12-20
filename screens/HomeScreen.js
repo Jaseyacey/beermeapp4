@@ -10,6 +10,15 @@ import {
   Text,
   View,
 } from 'react-native';
+import {
+  Container, 
+  Header, 
+  Content, 
+  Form, 
+  Item, 
+  Input,
+  Button
+} from 'native-base';
 import { MonoText } from '../components/StyledText';
 
 export default function HomeScreen() {
@@ -40,15 +49,23 @@ export default function HomeScreen() {
               <View>
                   <Text style={styles.registerText}>Sign In!</Text>
                   <Content>
-          <Form>
-            <Item>
-              <Input placeholder="Username" />
-            </Item>
-            <Item last>
-              <Input placeholder="Password" />
-            </Item>
-          </Form>
         </Content>
+        <Container>
+          <Header />
+          <Content>
+            <Form>
+              <Item>
+                <Input placeholder="Username"/>
+              </Item>
+              <Item last> 
+                <Input placeholder="Password" />
+              </Item>
+            </Form>
+            <Button rounded primary class="button">
+              <Text>Submit</Text>
+            </Button>
+          </Content>
+        </Container>
               </View>
       </ScrollView>
     </View>
