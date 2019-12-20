@@ -3,12 +3,6 @@ import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import {
-    BootstrapStyleSheet,
-    FormControl,
-    FormGroup,
-    Button,
-}from 'react-native-bootstrap-styles';
-import {
   Image,
   Platform,
   ScrollView,
@@ -17,7 +11,6 @@ import {
   View,
 } from 'react-native';
 import { MonoText } from '../components/StyledText';
-import { FormGroup } from 'reactstrap';
 
 export default function HomeScreen() {
   return (
@@ -45,14 +38,17 @@ export default function HomeScreen() {
           </Text>
         </View>
               <View>
-                  <Text style={styles.registerText}>Register!</Text>
-                  <FormGroup onSubmit={this.gotEmail} role="form">
-                    <FormControl type="text" className="FormControl" />
-                    <Button className="btn btn-primary" btn-small centerButton type="Submit">Submit</Button> 
-                  </FormGroup>
-              </View>
-              <View>
                   <Text style={styles.registerText}>Sign In!</Text>
+                  <Content>
+          <Form>
+            <Item>
+              <Input placeholder="Username" />
+            </Item>
+            <Item last>
+              <Input placeholder="Password" />
+            </Item>
+          </Form>
+        </Content>
               </View>
       </ScrollView>
     </View>
