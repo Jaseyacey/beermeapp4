@@ -1,12 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Button,
-  Item,
-  Input,
-  Icon,
-  Text,
-  Form
-} from 'native-base';
+import {Button,Item,Input,Icon,Text,Form} from 'native-base';
 import { observer } from 'mobx-react/native';
 import { observable } from 'mobx';
 
