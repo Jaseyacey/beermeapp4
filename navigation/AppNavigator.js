@@ -13,6 +13,13 @@ const splash = {
   }
 }
 
+const Login = {
+  screen: LoginScreen,
+  navigationOptions: {
+    header: null
+  }
+}
+
 const RouteConfig = {
   initialRoute: 'Splash'
 }

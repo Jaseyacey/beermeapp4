@@ -5,8 +5,12 @@ import React from 'react';
 import {Image,Platform,ScrollView,StyleSheet,Text,View,} from 'react-native';
 import {Container, Header, Content, Form, Item, Input,Button} from 'native-base';
 import { MonoText } from '../components/StyledText';
+import { inject } from 'mobx-react'; 
+import Login from '../components/login.component';
 
-export default function HomeScreen() {
+@inject("stores")
+export default function LoginScreen() {
+  const {stores} = this.props
   return (
     <View style={styles.container}>
       <ScrollView
@@ -32,6 +36,7 @@ export default function HomeScreen() {
           </Text>
         </View>
               <View>
+                <Login {...this.props}/>
                   <Text style={styles.registerText}>Sign In!</Text>
                   <Content>
         </Content>
