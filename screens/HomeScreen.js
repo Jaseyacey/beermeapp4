@@ -2,23 +2,8 @@ import * as WebBrowser from 'expo-web-browser';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
-import {
-  Image,
-  Platform,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
-import {
-  Container, 
-  Header, 
-  Content, 
-  Form, 
-  Item, 
-  Input,
-  Button
-} from 'native-base';
+import {Image,Platform,ScrollView,StyleSheet,Text,View,} from 'react-native';
+import {Container, Header, Content, Form, Item, Input,Button} from 'native-base';
 import { MonoText } from '../components/StyledText';
 
 export default function HomeScreen() {
@@ -61,8 +46,8 @@ export default function HomeScreen() {
                 <Input placeholder="Password" />
               </Item>
             </Form>
-            <Button rounded primary class="button">
-              <Text>Submit</Text>
+            <Button rounded primary>
+              <Text textAlign="center">Submit</Text>
             </Button>
           </Content>
         </Container>
@@ -116,7 +101,7 @@ function handleHelpPress() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#d3d3d3',
   },
   developmentModeText: {
     marginBottom: 20,
@@ -160,7 +145,7 @@ const styles = StyleSheet.create({
   },
   registerText: {
     paddingTop: 50, 
-    fontSize: 15,
+    fontSize: 20 ,
     color: "grey",
     lineHeight: 25,
     textAlign: 'center',
