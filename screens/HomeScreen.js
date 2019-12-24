@@ -40,7 +40,7 @@ export default function HomeScreen() {
           <Content>
             <Form>
               <Item>
-                <Input placeholder="Username"/>
+                <Input placeholder="Email"/>
               </Item>
               <Item last> 
                 <Input placeholder="Password" />
