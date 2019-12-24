@@ -24,7 +24,7 @@ This will install the framework in your node-modules. The import command in orde
 The stack used for this application is:
 - MobX
 - React-Native
-- CSS
+- ReactBase
 
 
 
