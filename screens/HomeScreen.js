@@ -46,7 +46,7 @@ export default function HomeScreen() {
                 <Input placeholder="Password" />
               </Item>
             </Form>
-            <Button rounded primary>
+            <Button rounded primary class="loginbutton">
               <Text textAlign="center">Submit</Text>
             </Button>
           </Content>
@@ -102,6 +102,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#d3d3d3',
+  },
+  loginbutton: {
+    textAlign: 'center',
   },
   developmentModeText: {
     marginBottom: 20,
