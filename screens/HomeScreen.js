@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
   },
   loginbutton: {
     textAlign: 'center',
+    paddingLeft: 50,
   },
   developmentModeText: {
     marginBottom: 20,
