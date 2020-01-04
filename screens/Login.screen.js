@@ -5,6 +5,7 @@ import React from 'react';
 import {Image,Platform,ScrollView,StyleSheet,Text,View,} from 'react-native';
 import {Container, Header, Content, Form, Item, Input,Button} from 'native-base';
 import { MonoText } from '../components/StyledText';
+import navigationOptions from '../components/login.component';
 
 export default function HomeScreen() {
   return (
@@ -40,13 +41,13 @@ export default function HomeScreen() {
           <Content>
             <Form>
               <Item>
-                <Input placeholder="Username"/>
+                <Input placeholder="Email"/>
               </Item>
               <Item last> 
                 <Input placeholder="Password" />
               </Item>
             </Form>
-            <Button rounded primary>
+            <Button rounded primary >
               <Text textAlign="center">Submit</Text>
             </Button>
           </Content>
