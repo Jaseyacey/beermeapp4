@@ -6,6 +6,7 @@ import {Image,Platform,ScrollView,StyleSheet,Text,View,} from 'react-native';
 import {Container, Header, Content, Form, Item, Input,Button} from 'native-base';
 import { MonoText } from '../components/StyledText';
 
+
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
@@ -40,14 +41,14 @@ export default function HomeScreen() {
           <Content>
             <Form>
               <Item>
-                <Input placeholder="Username"/>
+                <Input placeholder="Email"/>
               </Item>
               <Item last> 
                 <Input placeholder="Password" />
               </Item>
             </Form>
             <Button rounded primary class="loginbutton">
-              <Text textAlign="center">Submit</Text>
+              <Text>Submit</Text>
             </Button>
           </Content>
         </Container>
@@ -106,6 +107,7 @@ const styles = StyleSheet.create({
   loginbutton: {
     textAlign: 'center',
     paddingLeft: 50,
+    color: 'red'
   },
   developmentModeText: {
     marginBottom: 20,

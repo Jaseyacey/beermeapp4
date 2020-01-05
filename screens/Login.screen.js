@@ -48,7 +48,7 @@ export default function HomeScreen() {
               </Item>
             </Form>
             <Button rounded primary >
-              <Text textAlign="center">Submit</Text>
+              <Text textAlign="center">helpLink</Text>
             </Button>
           </Content>
         </Container>

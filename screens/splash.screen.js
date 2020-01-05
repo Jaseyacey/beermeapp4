@@ -6,11 +6,11 @@ import createStackNavigator from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import stores from 'react-native';
 
-class HomeScreen extends React.Component {
+class LoginScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Home Screen</Text>
+        <Text>Login Screen</Text>
       </View>
     );
   }
@@ -18,7 +18,7 @@ class HomeScreen extends React.Component {
 
 const Splashscreen = AppNavigator({
   Home: {
-    screen: HomeScreen,
+    screen: LoginScreen,
   },
 });
 
