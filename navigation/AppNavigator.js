@@ -4,8 +4,8 @@ import { StackNavigator } from 'react-navigation-stack';
 import { DrawerNavigator } from 'react-navigation';
 import SplashScreen from '../screens/splash.screen';
 import LoginScreen from '../screens/Login.screen';
-import LinksScreen from '../screens/LinksScreen';
-import SettingsScreen from '../screens/SettingsScreen';
+// import LinksScreen from '../screens/LinksScreen';
+// import SettingsScreen from '../screens/SettingsScreen';
 import MatchScreen from '../screens/match.screen';
 import { HeaderTitle } from 'react-navigation-stack';
 
@@ -42,8 +42,8 @@ const RouteConfig = {
 const navigate = createStackNavigator ({
   Splash: SplashScreen,
   Login: LoginScreen,
-  Links: LinksScreen,
-  import: SettingsScreen,
+  // Links: LinksScreen,
+  // import: SettingsScreen,
   Match: {screen: MatchStack}
 }, RouteConfig)
 
