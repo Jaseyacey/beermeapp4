@@ -40,11 +40,11 @@ const RouteConfig = {
   initialRoute: 'Splash'
 }
 const navigate = createStackNavigator ({
+  Match: {screen: MatchStack},
   Splash: SplashScreen,
   Login: LoginScreen,
   Links: LinksScreen,
-  import: SettingsScreen,
-  Match: {screen: MatchStack}
+  import: SettingsScreen
 }, RouteConfig)
 
 export default AppNavigator;
