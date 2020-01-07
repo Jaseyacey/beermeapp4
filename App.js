@@ -5,6 +5,8 @@ import { createStackNavigator } from 'react-navigation-stack';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/Login.screen';
 import SettingsScreen from './screens/SettingsScreen';
+import ApiKeys from './constants/ApiKeys';
+// import * as firebase from 'firebase';
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -12,6 +14,9 @@ const AppNavigator = createStackNavigator({
   },
   Settings: {
     screen: SettingsScreen,
+  },
+  Login: {
+    screen: LoginScreen,
   }
 });
 
