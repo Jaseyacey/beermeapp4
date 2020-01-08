@@ -4,9 +4,9 @@ import { Ionicons } from '@expo/vector-icons';
 import React, { Component } from 'react';
 import {Image,Platform,ScrollView,StyleSheet,Text,View,} from 'react-native';
 import {Container, Header, Content, Form, Item, Input,Button} from 'native-base';
-import { MonoText } from '../components/StyledText';
+// import { MonoText } from '../components/StyledText';
 import Login from '../components/login.component';
-import { isPlainObject } from 'mobx/lib/internal';
+
 import { inject } from 'mobx-react';
 
 @inject("stores")
