@@ -8,7 +8,7 @@ import {
   DeckSwiper
 } from 'native-base';
 import { StyleSheet, View, Text, Image} from 'react-native';
-import { observer } from 'mobx-react/native';
+import { observer } from 'mobx-react';
 import { observable } from 'mobx';
 import { createAutoSubscriber, autoSubscriber } from 'firebase-nest';
 

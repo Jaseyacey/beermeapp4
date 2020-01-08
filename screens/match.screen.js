@@ -6,7 +6,7 @@ import {
   Button
 } from 'native-base';
 import {inject} from 'mobx-react';
-import Match from '../components/match.compnent';
+import Match from '../components/match.component';
 
 @inject("stores")
 export default class MatchScreen extends Component {
