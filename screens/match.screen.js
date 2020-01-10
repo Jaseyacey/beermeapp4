@@ -1,5 +1,10 @@
 import React, {Component} from 'react'
-import {Container,Content,Icon,Button} from 'native-base';
+import {
+  Container,
+  Content,
+  Icon,
+  Button
+} from 'native-base';
 import {inject} from 'mobx-react';
 import Match from '../components/match.component';
 

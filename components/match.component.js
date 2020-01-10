@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import {button, Icon, Spinner, Card, CardItem, DeckSwiper, View} from 'native-base';
 import { View, Text, Image } from 'react-native';
-import {observer} from 'mobx-react/native';
+import {observer} from 'mobx-react';
 import {observerable} from 'mobx';
 import {createAutoSubscriber, autoSubscriber} from 'firebase-nest';
 

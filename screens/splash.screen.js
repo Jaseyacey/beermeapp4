@@ -6,7 +6,7 @@ import createStackNavigator from 'react-navigation-stack';
 import { createDrawerNavigator } from 'react-navigation-drawer';
 import stores from 'react-native';
 
-class LoginScreen extends React.Component {
+class LoginScreen extends Component  {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
